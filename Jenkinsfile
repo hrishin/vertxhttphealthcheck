@@ -2,7 +2,7 @@
 
 @Library('github.com/fabric8io/fabric8-pipeline-library@master')
 
-mavenNode(mavenImage: 'piyushgarg/testnode') {
+mavenNode(parameters: [mavenImage: 'piyushgarg/testnode']) {
     sh 'node --version'
     sh 'npm version'
 }
